@@ -1,0 +1,911 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Long Beach AI Growth Engine - Accelerate your local business with AI-driven SEO, automated leads, and real-time analytics">
+    <meta name="keywords" content="AI SEO, Long Beach, Local Business, Growth, Automation, Analytics">
+    <meta name="author" content="Dan Downey SEO">
+    <meta property="og:title" content="Long Beach AI Growth Engine for Local Business Dominance">
+    <meta property="og:description" content="Accelerate Long Beach growth with AI SEO & automation">
+    <meta property="og:type" content="website">
+    <title>Long Beach AI Growth Engine | AI SEO & Automation for Local Business</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            font-family: 'Inter', sans-serif;
+        }
+        
+        body {
+            background-color: #ffffff;
+            color: #000000;
+        }
+        
+        .dark-section {
+            background-color: #f5f5f5;
+        }
+        
+        .accent-color {
+            color: #4A90E2;
+        }
+        
+        .accent-bg {
+            background-color: #4A90E2;
+        }
+        
+        .accent-hover:hover {
+            background-color: #3a7bc8;
+        }
+        
+        .smooth-transition {
+            transition: all 300ms ease-out;
+        }
+        
+        .hero-gradient {
+            background: linear-gradient(135deg, #ffffff 0%, #f5f5f5 100%);
+        }
+        
+        .card-hover {
+            transition: all 300ms ease-out;
+        }
+        
+        .card-hover:hover {
+            transform: scale(1.05);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        }
+        
+        .button-primary {
+            background-color: #4A90E2;
+            color: white;
+            border-radius: 9999px;
+            padding: 12px 32px;
+            font-weight: 600;
+            transition: all 300ms ease-out;
+            display: inline-block;
+            text-decoration: none;
+            border: none;
+            cursor: pointer;
+        }
+        
+        .button-primary:hover {
+            background-color: #3a7bc8;
+            transform: scale(1.05);
+            box-shadow: 0 10px 30px rgba(74, 144, 226, 0.3);
+        }
+        
+        .button-primary:active {
+            transform: scale(0.98);
+        }
+        
+        .button-secondary {
+            border: 2px solid #4A90E2;
+            color: #4A90E2;
+            background-color: transparent;
+            border-radius: 9999px;
+            padding: 10px 30px;
+            font-weight: 600;
+            transition: all 300ms ease-out;
+            display: inline-block;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        
+        .button-secondary:hover {
+            background-color: #4A90E2;
+            color: white;
+            transform: scale(1.05);
+        }
+        
+        .faq-question {
+            cursor: pointer;
+            user-select: none;
+        }
+        
+        .faq-icon {
+            transition: transform 300ms ease-out;
+        }
+        
+        .faq-answer {
+            transition: all 300ms ease-out;
+            max-height: 500px;
+            overflow: hidden;
+        }
+        
+        .faq-answer.hidden {
+            max-height: 0;
+            opacity: 0;
+        }
+        
+        .mobile-menu {
+            transition: all 300ms ease-out;
+        }
+        
+        .mobile-menu.hidden {
+            display: none;
+        }
+        
+        .star-rating {
+            color: #fbbf24;
+        }
+        
+        .feature-icon {
+            width: 48px;
+            height: 48px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #e3f2fd;
+            border-radius: 12px;
+            margin-bottom: 16px;
+        }
+        
+        .feature-icon svg {
+            width: 24px;
+            height: 24px;
+            stroke: #4A90E2;
+            stroke-width: 1.5;
+        }
+    </style>
+</head>
+<body class="bg-white text-black">
+    <!-- Header & Navigation -->
+    <header class="sticky top-0 z-50 bg-white shadow-sm">
+        <nav class="max-w-7xl mx-auto px-8 md:px-16 py-6 flex items-center justify-between">
+            <!-- Logo -->
+            <div class="flex items-center gap-3">
+                <div class="w-10 h-10 bg-gradient-to-br from-blue-500 to-blue-600 rounded-lg flex items-center justify-center">
+                    <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                    </svg>
+                </div>
+                <span class="text-xl font-bold text-black">LB AI Growth</span>
+            </div>
+
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex items-center gap-8">
+                <a href="#features" class="text-black font-medium hover:text-blue-600 smooth-transition">Features</a>
+                <a href="#benefits" class="text-black font-medium hover:text-blue-600 smooth-transition">Benefits</a>
+                <a href="#testimonials" class="text-black font-medium hover:text-blue-600 smooth-transition">Testimonials</a>
+                <a href="#faq" class="text-black font-medium hover:text-blue-600 smooth-transition">FAQ</a>
+            </div>
+
+            <!-- CTA Button Desktop -->
+            <div class="hidden md:flex gap-4">
+                <a href="https://dandowneyseo.com" class="button-primary">Get Started</a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button class="mobile-menu-button md:hidden text-black text-2xl">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+
+        <!-- Mobile Menu -->
+        <div class="mobile-menu hidden md:hidden bg-white border-t border-gray-200">
+            <div class="px-8 py-4 flex flex-col gap-4">
+                <a href="#features" class="text-black font-medium py-2 hover:text-blue-600 smooth-transition">Features</a>
+                <a href="#benefits" class="text-black font-medium py-2 hover:text-blue-600 smooth-transition">Benefits</a>
+                <a href="#testimonials" class="text-black font-medium py-2 hover:text-blue-600 smooth-transition">Testimonials</a>
+                <a href="#faq" class="text-black font-medium py-2 hover:text-blue-600 smooth-transition">FAQ</a>
+                <a href="https://dandowneyseo.com" class="button-primary text-center">Get Started</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-gradient py-32 md:py-40 px-8 md:px-16">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                <!-- Hero Content -->
+                <div class="flex flex-col gap-8">
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-black leading-tight tracking-tight">
+                        Long Beach AI Growth Engine for Local Business Dominance
+                    </h1>
+                    
+                    <p class="text-lg md:text-xl text-gray-700 font-medium leading-relaxed">
+                        Accelerate your Long Beach business growth with cutting-edge AI-driven SEO and intelligent automation. Dominate local search results, capture more qualified leads, and make data-driven decisions that transform your business.
+                    </p>
+
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="https://dandowneyseo.com" class="button-primary text-center">
+                            <i class="fas fa-rocket mr-2"></i> Start Your Growth Journey
+                        </a>
+                        <button class="button-secondary text-center">
+                            <i class="fas fa-play-circle mr-2"></i> Learn More
+                        </button>
+                    </div>
+
+                    <!-- Trust Indicators -->
+                    <div class="flex flex-col sm:flex-row gap-8 pt-8 border-t border-gray-300">
+                        <div>
+                            <p class="text-3xl font-bold text-blue-600">500+</p>
+                            <p class="text-gray-600 font-medium">Local Businesses Served</p>
+                        </div>
+                        <div>
+                            <p class="text-3xl font-bold text-blue-600">98%</p>
+                            <p class="text-gray-600 font-medium">Client Satisfaction Rate</p>
+                        </div>
+                        <div>
+                            <p class="text-3xl font-bold text-blue-600">3.5x</p>
+                            <p class="text-gray-600 font-medium">Average ROI Increase</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hero Visual -->
+                <div class="hidden lg:flex items-center justify-center">
+                    <div class="relative w-full max-w-md">
+                        <div class="absolute inset-0 bg-gradient-to-br from-blue-400 to-blue-600 rounded-3xl transform rotate-6 opacity-20"></div>
+                        <div class="relative bg-gradient-to-br from-blue-500 to-blue-700 rounded-3xl p-12 shadow-2xl">
+                            <div class="space-y-6">
+                                <div class="flex items-center gap-4 bg-white bg-opacity-20 rounded-xl p-4 backdrop-blur-sm">
+                                    <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                                    </svg>
+                                    <div class="text-white">
+                                        <p class="font-bold text-sm">AI-Driven SEO</p>
+                                        <p class="text-xs opacity-90">Real-time Optimization</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-center gap-4 bg-white bg-opacity-20 rounded-xl p-4 backdrop-blur-sm">
+                                    <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
+                                    </svg>
+                                    <div class="text-white">
+                                        <p class="font-bold text-sm">Live Analytics</p>
+                                        <p class="text-xs opacity-90">Track Every Metric</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-center gap-4 bg-white bg-opacity-20 rounded-xl p-4 backdrop-blur-sm">
+                                    <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                    </svg>
+                                    <div class="text-white">
+                                        <p class="font-bold text-sm">Automated Leads</p>
+                                        <p class="text-xs opacity-90">24/7 Lead Generation</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-20 md:py-32 px-8 md:px-16 bg-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16 md:mb-24">
+                <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-black mb-6 tracking-tight">
+                    Powerful AI-Powered Features
+                </h2>
+                <p class="text-lg text-gray-700 font-medium max-w-2xl mx-auto">
+                    Our comprehensive suite of AI-driven tools is specifically designed to help Long Beach businesses achieve unprecedented growth and market dominance.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
+                <!-- Feature 1: AI-Driven SEO -->
+                <div class="card-hover bg-white rounded-2xl p-8 md:p-10 border border-gray-200 shadow-md">
+                    <div class="feature-icon">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-black mb-4">AI-Driven SEO</h3>
+                    <p class="text-gray-700 font-medium mb-6 leading-relaxed">
+                        Leverage advanced machine learning algorithms to optimize your website for Long Beach search queries. Our AI continuously analyzes search patterns, competitor strategies, and user behavior to keep your site ranking at the top of local search results.
+                    </p>
+                    <ul class="space-y-3">
+                        <li class="flex items-start gap-3">
+                            <svg class="w-5 h-5 text-blue-600 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <span class="text-gray-700">Real-time keyword optimization and ranking tracking</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <svg class="w-5 h-5 text-blue-600 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <span class="text-gray-700">Automated content recommendations and optimization</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <svg class="w-5 h-5 text-blue-600 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <span class="text-gray-700">Local search dominance with geo-targeted strategies</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Feature 2: Automated Lead Generation -->
+                <div class="card-hover bg-white rounded-2xl p-8 md:p-10 border border-gray-200 shadow-md">
+                    <div class="feature-icon">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-black mb-4">Automated Lead Generation</h3>
+                    <p class="text-gray-700 font-medium mb-6 leading-relaxed">
+                        Convert website visitors into qualified leads automatically. Our intelligent lead capture system uses behavioral analysis and AI-powered qualification to identify and nurture high-intent prospects 24/7, even while you sleep.
+                    </p>
+                    <ul class="space-y-3">
+                        <li class="flex items-start gap-3">
+                            <svg class="w-5 h-5 text-blue-600 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <span class="text-gray-700">24/7 automated lead capture and qualification</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <svg class="w-5 h-5 text-blue-600 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <span class="text-gray-700">Intelligent lead scoring and prioritization</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <svg class="w-5 h-5 text-blue-600 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <span class="text-gray-700">Automated follow-up sequences and nurturing</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Feature 3: Real-Time Analytics -->
+                <div class="card-hover bg-white rounded-2xl p-8 md:p-10 border border-gray-200 shadow-md">
+                    <div class="feature-icon">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-black mb-4">Real-Time Analytics</h3>
+                    <p class="text-gray-700 font-medium mb-6 leading-relaxed">
+                        Make smarter business decisions with comprehensive, real-time analytics dashboards. Track every metric that matters, from traffic sources and conversion rates to customer lifetime value and ROI, all in one intuitive platform.
+                    </p>
+                    <ul class="space-y-3">
+                        <li class="flex items-start gap-3">
+                            <svg class="w-5 h-5 text-blue-600 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <span class="text-gray-700">Live performance dashboards and reporting</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <svg class="w-5 h-5 text-blue-600 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <span class="text-gray-700">AI-powered insights and predictive analytics</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <svg class="w-5 h-5 text-blue-600 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <span class="text-gray-700">Custom reports and data export capabilities</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section id="benefits" class="py-20 md:py-32 px-8 md:px-16 bg-f5f5f5">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16 md:mb-24">
+                <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-black mb-6 tracking-tight">
+                    Transform Your Business Growth
+                </h2>
+                <p class="text-lg text-gray-700 font-medium max-w-2xl mx-auto">
+                    Experience measurable results that directly impact your bottom line and market position in Long Beach.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12">
+                <!-- Benefit 1: Quick Ranking Boosts -->
+                <div class="bg-white rounded-2xl p-8 md:p-10 shadow-md border border-gray-200 hover:shadow-lg smooth-transition">
+                    <div class="flex items-start gap-4 mb-6">
+                        <div class="flex-shrink-0">
+                            <div class="flex items-center justify-center h-12 w-12 rounded-lg bg-blue-100">
+                                <svg class="h-6 w-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-black">Quick Ranking Boosts</h3>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 font-medium leading-relaxed">
+                        See your website climb search rankings in weeks, not months. Our AI algorithms identify high-opportunity keywords and implement optimization strategies that deliver rapid, sustainable results for your Long Beach business.
+                    </p>
+                    <p class="text-blue-600 font-bold mt-4">Average ranking improvement: 40-60 positions in 90 days</p>
+                </div>
+
+                <!-- Benefit 2: More Qualified Customers -->
+                <div class="bg-white rounded-2xl p-8 md:p-10 shadow-md border border-gray-200 hover:shadow-lg smooth-transition">
+                    <div class="flex items-start gap-4 mb-6">
+                        <div class="flex-shrink-0">
+                            <div class="flex items-center justify-center h-12 w-12 rounded-lg bg-blue-100">
+                                <svg class="h-6 w-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-black">More Qualified Customers</h3>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 font-medium leading-relaxed">
+                        Attract customers who are actively searching for your services. Our targeted approach ensures you're reaching high-intent prospects ready to buy, dramatically increasing conversion rates and reducing customer acquisition costs.
+                    </p>
+                    <p class="text-blue-600 font-bold mt-4">Average conversion rate increase: 150-300%</p>
+                </div>
+
+                <!-- Benefit 3: Smarter Business Decisions -->
+                <div class="bg-white rounded-2xl p-8 md:p-10 shadow-md border border-gray-200 hover:shadow-lg smooth-transition">
+                    <div class="flex items-start gap-4 mb-6">
+                        <div class="flex-shrink-0">
+                            <div class="flex items-center justify-center h-12 w-12 rounded-lg bg-blue-100">
+                                <svg class="h-6 w-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-black">Smarter Business Decisions</h3>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 font-medium leading-relaxed">
+                        Access AI-powered insights that reveal market opportunities and customer behavior patterns. Make data-backed decisions that optimize your marketing spend, improve customer retention, and maximize profitability.
+                    </p>
+                    <p class="text-blue-600 font-bold mt-4">Average ROI improvement: 3.5x within 6 months</p>
+                </div>
+            </div>
+
+            <!-- Additional Benefits Row -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 mt-8 md:mt-12">
+                <!-- Benefit 4: Time Savings -->
+                <div class="bg-white rounded-2xl p-8 md:p-10 shadow-md border border-gray-200 hover:shadow-lg smooth-transition">
+                    <div class="flex items-start gap-4 mb-6">
+                        <div class="flex-shrink-0">
+                            <div class="flex items-center justify-center h-12 w-12 rounded-lg bg-green-100">
+                                <svg class="h-6 w-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-black">Reclaim Your Time</h3>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 font-medium leading-relaxed">
+                        Automation handles repetitive marketing tasks, freeing your team to focus on strategy and growth. Reduce manual work by up to 20 hours per week while maintaining consistent, high-quality marketing execution.
+                    </p>
+                </div>
+
+                <!-- Benefit 5: Competitive Advantage -->
+                <div class="bg-white rounded-2xl p-8 md:p-10 shadow-md border border-gray-200 hover:shadow-lg smooth-transition">
+                    <div class="flex items-start gap-4 mb-6">
+                        <div class="flex-shrink-0">
+                            <div class="flex items-center justify-center h-12 w-12 rounded-lg bg-purple-100">
+                                <svg class="h-6 w-6 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-black">Stay Ahead of Competition</h3>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 font-medium leading-relaxed">
+                        Leverage cutting-edge AI technology that most competitors haven't adopted yet. Dominate your local market with advanced strategies, real-time optimization, and predictive insights that keep you consistently ahead.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section with Background -->
+    <section class="py-20 md:py-32 px-8 md:px-16 relative overflow-hidden" style="background-image: url('https://images.unsplash.com/photo-1552664730-d307ca884978?w=1600&q=80'); background-size: cover; background-position: center;">
+        <div class="absolute inset-0 bg-black bg-opacity-70"></div>
+        <div class="max-w-4xl mx-auto text-center relative z-10">
+            <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6 tracking-tight">
+                Ready to Dominate Your Local Market?
+            </h2>
+            <p class="text-lg md:text-xl text-gray-100 font-medium mb-10 leading-relaxed">
+                Join 500+ Long Beach businesses that are already experiencing explosive growth with our AI Growth Engine. Start your transformation today and see results within the first 30 days.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="https://dandowneyseo.com" class="button-primary text-center text-lg px-10 py-4">
+                    <i class="fas fa-rocket mr-2"></i> Get Started Now
+                </a>
+                <a href="mailto:dandowneyseo@gmail.com" class="button-secondary text-center text-lg px-10 py-4 bg-white bg-opacity-20 border-white text-white hover:bg-white hover:text-black">
+                    <i class="fas fa-envelope mr-2"></i> Contact Us
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-20 md:py-32 px-8 md:px-16 bg-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16 md:mb-24">
+                <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-black mb-6 tracking-tight">
+                    Trusted by Local Business Leaders
+                </h2>
+                <p class="text-lg text-gray-700 font-medium max-w-2xl mx-auto">
+                    See what Long Beach business owners are saying about their transformative results with our AI Growth Engine.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 md:gap-10">
+                <!-- Testimonial 1 -->
+                <div class="bg-white rounded-2xl p-8 md:p-10 border border-gray-200 shadow-md hover:shadow-lg smooth-transition">
+                    <div class="flex items-center gap-1 mb-4">
+                        <span class="star-rating"><i class="fas fa-star"></i></span>
+                        <span class="star-rating"><i class="fas fa-star"></i></span>
+                        <span class="star-rating"><i class="fas fa-star"></i></span>
+                        <span class="star-rating"><i class="fas fa-star"></i></span>
+                        <span class="star-rating"><i class="fas fa-star"></i></span>
+                    </div>
+                    <p class="text-gray-700 font-medium mb-6 leading-relaxed">
+                        "This AI Growth Engine transformed our entire marketing strategy. Within 90 days, we saw a 320% increase in qualified leads and our website traffic tripled. The automated lead nurturing alone has saved us countless hours. Highly recommend for any serious Long Beach business."
+                    </p>
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 bg-gradient-to-br from-blue-400 to-blue-600 rounded-full flex items-center justify-center text-white font-bold">
+                            MJ
+                        </div>
+                        <div>
+                            <p class="font-bold text-black">Marcus Johnson</p>
+                            <p class="text-sm text-gray-600">Owner, Johnson Home Remodeling</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="bg-white rounded-2xl p-8 md:p-10 border border-gray-200 shadow-md hover:shadow-lg smooth-transition">
+                    <div class="flex items-center gap-1 mb-4">
+                        <span class="star-rating"><i class="fas fa-star"></i></span>
+                        <span class="star-rating"><i class="fas fa-star"></i></span>
+                        <span class="star-rating"><i class="fas fa-star"></i></span>
+                        <span class="star-rating"><i class="fas fa-star"></i></span>
+                        <span class="star-rating"><i class="fas fa-star"></i></span>
+                    </div>
+                    <p class="text-gray-700 font-medium mb-6 leading-relaxed">
+                        "As a dental practice, we were struggling to compete with larger offices. The AI SEO optimization placed us at the top of local search results. Our patient acquisition cost dropped by 60% while we're booking 40% more appointments. This platform is a game-changer for healthcare professionals."
+                    </p>
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 bg-gradient-to-br from-purple-400 to-purple-600 rounded-full flex items-center justify-center text-white font-bold">
+                            SH
+                        </div>
+                        <div>
+                            <p class="font-bold text-black">Dr. Sarah Hamilton</p>
+                            <p class="text-sm text-gray-600">Founder, Smile Dental Long Beach</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="bg-white rounded-2xl p-8 md:p-10 border border-gray-200 shadow-md hover:shadow-lg smooth-transition">
+                    <div class="flex items-center gap-1 mb-4">
+                        <span class="star-rating"><i class="fas fa-star"></i></span>
+                        <span class="star-rating"><i class="fas fa-star"></i></span>
+                        <span class="star-rating"><i class="fas fa-star"></i></span>
+                        <span class="star-rating"><i class="fas fa-star"></i></span>
+                        <span class="star-rating"><i class="fas fa-star"></i></span>
+                    </div>
+                    <p class="text-gray-700 font-medium mb-6 leading-relaxed">
+                        "The real-time analytics dashboard has completely changed how we approach marketing. We can see exactly what's working and adjust immediately. Our ROI increased by 280% in just 6 months. The customer support team is incredibly responsive and helpful too."
+                    </p>
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 bg-gradient-to-br from-green-400 to-green-600 rounded-full flex items-center justify-center text-white font-bold">
+                            TR
+                        </div>
+                        <div>
+                            <p class="font-bold text-black">Thomas Rivera</p>
+                            <p class="text-sm text-gray-600">Manager, Rivera's Premium Auto Detail</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 4 -->
+                <div class="bg-white rounded-2xl p-8 md:p-10 border border-gray-200 shadow-md hover:shadow-lg smooth-transition">
+                    <div class="flex items-center gap-1 mb-4">
+                        <span class="star-rating"><i class="fas fa-star"></i></span>
+                        <span class="star-rating"><i class="fas fa-star"></i></span>
+                        <span class="star-rating"><i class="fas fa-star"></i></span>
+                        <span class="star-rating"><i class="fas fa-star"></i></span>
+                        <span class="star-rating"><i class="fas fa-star"></i></span>
+                    </div>
+                    <p class="text-gray-700 font-medium mb-6 leading-relaxed">
+                        "I was skeptical about AI-driven marketing, but the results speak for themselves. Our law firm went from getting 2-3 cases per month to 15+ qualified leads monthly. The automated lead qualification saves our team hours of work. Absolutely worth every penny."
+                    </p>
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 bg-gradient-to-br from-red-400 to-red-600 rounded-full flex items-center justify-center text-white font-bold">
+                            JL
+                        </div>
+                        <div>
+                            <p class="font-bold text-black">Jennifer Liu</p>
+                            <p class="text-sm text-gray-600">Senior Partner, Liu & Associates Law</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section class="py-20 md:py-32 px-8 md:px-16 bg-f5f5f5">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-black mb-12 tracking-tight text-center">
+                About Our Mission
+            </h2>
+
+            <div class="space-y-8">
+                <p class="text-lg text-gray-700 font-medium leading-relaxed">
+                    Long Beach AI Growth Engine was founded with a singular mission: to democratize access to enterprise-level AI marketing tools for local businesses. We recognized that Long Beach entrepreneurs were struggling to compete with larger corporations that had unlimited marketing budgets and sophisticated technology. Our founder, Dan Downey, spent over a decade in digital marketing and saw firsthand how AI could level the playing field. He assembled a team of AI specialists, data scientists, and marketing experts to create a platform that would give every local business owner the tools they needed to dominate their market.
+                </p>
+
+                <p class="text-lg text-gray-700 font-medium leading-relaxed">
+                    Today, we're proud to serve over 500 Long Beach businesses across every industry imaginable—from healthcare and legal services to home services and retail. Our core values of innovation, transparency, and customer success guide everything we do. We believe that when local businesses thrive, entire communities flourish. That's why we're committed to continuous improvement, cutting-edge AI research, and providing world-class support to every client. Our vision is to become the go-to AI marketing platform for ambitious business owners who refuse to settle for mediocrity.
+                </p>
+            </div>
+
+            <div class="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="text-center p-6 bg-white rounded-2xl shadow-md border border-gray-200">
+                    <p class="text-4xl font-bold text-blue-600 mb-2">500+</p>
+                    <p class="text-gray-700 font-medium">Businesses Served</p>
+                </div>
+                <div class="text-center p-6 bg-white rounded-2xl shadow-md border border-gray-200">
+                    <p class="text-4xl font-bold text-blue-600 mb-2">98%</p>
+                    <p class="text-gray-700 font-medium">Client Satisfaction</p>
+                </div>
+                <div class="text-center p-6 bg-white rounded-2xl shadow-md border border-gray-200">
+                    <p class="text-4xl font-bold text-blue-600 mb-2">$50M+</p>
+                    <p class="text-gray-700 font-medium">Revenue Generated</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-20 md:py-32 px-8 md:px-16 bg-white">
+        <div class="max-w-4xl mx-auto">
+            <div class="text-center mb-16 md:mb-24">
+                <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-black mb-6 tracking-tight">
+                    Frequently Asked Questions
+                </h2>
+                <p class="text-lg text-gray-700 font-medium">
+                    Everything you need to know about our AI Growth Engine platform.
+                </p>
+            </div>
+
+            <div class="space-y-4">
+                <!-- FAQ Item 1 -->
+                <div class="faq-item bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-md hover:shadow-lg smooth-transition">
+                    <div class="faq-question p-6 md:p-8 cursor-pointer flex items-center justify-between hover:bg-gray-50 smooth-transition">
+                        <h3 class="text-lg md:text-xl font-bold text-black flex-1">
+                            How quickly will I see results from the AI Growth Engine?
+                        </h3>
+                        <svg class="faq-icon w-6 h-6 text-blue-600 flex-shrink-0 ml-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                        </svg>
+                    </div>
+                    <div class="faq-answer hidden px-6 md:px-8 pb-6 md:pb-8 border-t border-gray-200 text-gray-700 font-medium leading-relaxed">
+                        Most clients start seeing measurable improvements within 2-4 weeks. Quick wins include improved ranking positions for targeted keywords and increased website traffic. More substantial results—like significant lead volume increases and revenue growth—typically appear within 60-90 days. The timeline depends on your starting point, industry competitiveness, and how aggressively you implement recommendations. We provide detailed progress reports every week so you can track exactly what's happening.
+                    </div>
+                </div>
+
+                <!-- FAQ Item 2 -->
+                <div class="faq-item bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-md hover:shadow-lg smooth-transition">
+                    <div class="faq-question p-6 md:p-8 cursor-pointer flex items-center justify-between hover:bg-gray-50 smooth-transition">
+                        <h3 class="text-lg md:text-xl font-bold text-black flex-1">
+                            Do I need technical knowledge to use the platform?
+                        </h3>
+                        <svg class="faq-icon w-6 h-6 text-blue-600 flex-shrink-0 ml-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                        </svg>
+                    </div>
+                    <div class="faq-answer hidden px-6 md:px-8 pb-6 md:pb-8 border-t border-gray-200 text-gray-700 font-medium leading-relaxed">
+                        Absolutely not! Our platform is designed specifically for business owners and marketers without technical backgrounds. The interface is intuitive and user-friendly, with clear guidance at every step. We provide comprehensive onboarding training, video tutorials, and live support to help you get started. Our AI handles all the technical heavy lifting—you just focus on your business. Many of our most successful clients had zero technical experience when they started.
+                    </div>
+                </div>
+
+                <!-- FAQ Item 3 -->
+                <div class="faq-item bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-md hover:shadow-lg smooth-transition">
+                    <div class="faq-question p-6 md:p-8 cursor-pointer flex items-center justify-between hover:bg-gray-50 smooth-transition">
+                        <h3 class="text-lg md:text-xl font-bold text-black flex-1">
+                            What if my business is in a highly competitive industry?
+                        </h3>
+                        <svg class="faq-icon w-6 h-6 text-blue-600 flex-shrink-0 ml-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                        </svg>
+                    </div>
+                    <div class="faq-answer hidden px-6 md:px-8 pb-6 md:pb-8 border-t border-gray-200 text-gray-700 font-medium leading-relaxed">
+                        Competitive industries are actually where our AI Growth Engine shines. Our advanced algorithms excel at finding underutilized opportunities and competitive advantages that others miss. We analyze competitor strategies, identify market gaps, and position your business to stand out. Many of our biggest success stories come from highly competitive fields like legal services, dentistry, and home services. The key is having the right technology and strategy—which is exactly what we provide.
+                    </div>
+                </div>
+
+                <!-- FAQ Item 4 -->
+                <div class="faq-item bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-md hover:shadow-lg smooth-transition">
+                    <div class="faq-question p-6 md:p-8 cursor-pointer flex items-center justify-between hover:bg-gray-50 smooth-transition">
+                        <h3 class="text-lg md:text-xl font-bold text-black flex-1">
+                            What happens if I'm not satisfied with the results?
+                        </h3>
+                        <svg class="faq-icon w-6 h-6 text-blue-600 flex-shrink-0 ml-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                        </svg>
+                    </div>
+                    <div class="faq-answer hidden px-6 md:px-8 pb-6 md:pb-8 border-t border-gray-200 text-gray-700 font-medium leading-relaxed">
+                        Your success is our success. We offer a 100% satisfaction guarantee—if you're not seeing meaningful progress within 90 days, we'll work with you to adjust the strategy or provide a full refund. We also provide a dedicated account manager who reviews your progress regularly and optimizes your campaigns continuously. We're not just selling you software; we're partnering with you for long-term growth. Our 98% client retention rate speaks to our commitment to your success.
+                    </div>
+                </div>
+
+                <!-- FAQ Item 5 -->
+                <div class="faq-item bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-md hover:shadow-lg smooth-transition">
+                    <div class="faq-question p-6 md:p-8 cursor-pointer flex items-center justify-between hover:bg-gray-50 smooth-transition">
+                        <h3 class="text-lg md:text-xl font-bold text-black flex-1">
+                            How much does the platform cost and what's included?
+                        </h3>
+                        <svg class="faq-icon w-6 h-6 text-blue-600 flex-shrink-0 ml-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                        </svg>
+                    </div>
+                    <div class="faq-answer hidden px-6 md:px-8 pb-6 md:pb-8 border-t border-gray-200 text-gray-700 font-medium leading-relaxed">
+                        Pricing varies based on your business size and goals. We offer flexible plans starting at $997/month for small businesses up to $5,000+/month for enterprise clients. Every plan includes AI-driven SEO optimization, automated lead generation, real-time analytics, dedicated support, and regular strategy reviews. We also offer custom packages tailored to your specific needs. Most clients see a 3-5x ROI within the first 6 months, making it an excellent investment. Schedule a free consultation with our team to get a personalized quote.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black text-white py-16 md:py-24 px-8 md:px-16">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 md:gap-8 mb-12">
+                <!-- Brand Column -->
+                <div class="flex flex-col gap-4">
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 bg-gradient-to-br from-blue-500 to-blue-600 rounded-lg flex items-center justify-center">
+                            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                            </svg>
+                        </div>
+                        <span class="text-xl font-bold">LB AI Growth</span>
+                    </div>
+                    <p class="text-gray-400 font-medium leading-relaxed">
+                        Empowering Long Beach businesses with AI-driven growth strategies and cutting-edge automation technology.
+                    </p>
+                </div>
+
+                <!-- Product Column -->
+                <div class="flex flex-col gap-4">
+                    <h4 class="text-lg font-bold text-white">Product</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#features" class="text-gray-400 hover:text-blue-400 font-medium smooth-transition">Features</a></li>
+                        <li><a href="#benefits" class="text-gray-400 hover:text-blue-400 font-medium smooth-transition">Benefits</a></li>
+                        <li><a href="#testimonials" class="text-gray-400 hover:text-blue-400 font-medium smooth-transition">Testimonials</a></li>
+                        <li><a href="#faq" class="text-gray-400 hover:text-blue-400 font-medium smooth-transition">FAQ</a></li>
+                    </ul>
+                </div>
+
+                <!-- Company Column -->
+                <div class="flex flex-col gap-4">
+                    <h4 class="text-lg font-bold text-white">Company</h4>
+                    <ul class="space-y-3">
+                        <li><a href="privacy.html" class="text-gray-400 hover:text-blue-400 font-medium smooth-transition">Privacy Policy</a></li>
+                        <li><a href="terms.html" class="text-gray-400 hover:text-blue-400 font-medium smooth-transition">Terms of Service</a></li>
+                        <li><a href="blog.html" class="text-gray-400 hover:text-blue-400 font-medium smooth-transition">Blog</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Column -->
+                <div class="flex flex-col gap-4">
+                    <h4 class="text-lg font-bold text-white">Get In Touch</h4>
+                    <p class="text-gray-400 font-medium">
+                        Email: <a href="mailto:dandowneyseo@gmail.com" class="text-blue-400 hover:text-blue-300 smooth-transition">dandowneyseo@gmail.com</a>
+                    </p>
+                    <div class="flex gap-4 pt-4">
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center text-gray-400 hover:bg-blue-600 hover:text-white smooth-transition">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center text-gray-400 hover:bg-blue-600 hover:text-white smooth-transition">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center text-gray-400 hover:bg-blue-600 hover:text-white smooth-transition">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center text-gray-400 hover:bg-blue-600 hover:text-white smooth-transition">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="border-t border-gray-800 pt-12 flex flex-col md:flex-row justify-between items-center gap-6">
+                <p class="text-gray-400 font-medium text-center md:text-left">
+                    © 2025 Long Beach AI Growth Engine. All rights reserved.
+                </p>
+                <p class="text-gray-400 font-medium text-center md:text-right">
+                    Designed to accelerate your local business growth with cutting-edge AI technology.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Mobile Menu Toggle
+            const mobileMenuButton = document.querySelector('.mobile-menu-button');
+            const mobileMenu = document.querySelector('.mobile-menu');
+            
+            if (mobileMenuButton && mobileMenu) {
+                mobileMenuButton.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('hidden');
+                    const icon = mobileMenuButton.querySelector('i');
+                    if (icon) {
+                        icon.classList.toggle('fa-bars');
+                        icon.classList.toggle('fa-times');
+                    }
+                });
+
+                const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+                mobileMenuLinks.forEach(link => {
+                    link.addEventListener('click', () => {
+                        mobileMenu.classList.add('hidden');
+                        const icon = mobileMenuButton.querySelector('i');
+                        if (icon) {
+                            icon.classList.remove('fa-times');
+                            icon.classList.add('fa-bars');
+                        }
+                    });
+                });
+            }
+
+            // FAQ Accordion Toggle
+            const faqItems = document.querySelectorAll('.faq-item');
+            faqItems.forEach(item => {
+                const question = item.querySelector('.faq-question');
+                if (question) {
+                    question.addEventListener('click', () => {
+                        const answer = item.querySelector('.faq-answer');
+                        const isOpen = !answer.classList.contains('hidden');
+                        
+                        // Close all other FAQ items
+                        faqItems.forEach(otherItem => {
+                            if (otherItem !== item) {
+                                otherItem.querySelector('.faq-answer')?.classList.add('hidden');
+                                otherItem.querySelector('.faq-icon')?.classList.remove('rotate-180');
+                            }
+                        });
+                        
+                        // Toggle current item
+                        answer?.classList.toggle('hidden');
+                        item.querySelector('.faq-icon')?.classList.toggle('rotate-180');
+                    });
+                }
+            });
+
+            // Smooth Scroll for Anchor Links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    const href = this.getAttribute('href');
+                    if (href !== '#' && href.length > 1) {
+                        e.preventDefault();
+                        const target = document.querySelector(href);
+                        if (target) {
+                            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                        }
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
